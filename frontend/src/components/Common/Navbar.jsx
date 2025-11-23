@@ -69,10 +69,39 @@ const Navbar = () => {
         navDrawerOpen ? "translate-x-0": "-translate-x-full"
         }`}>
          <div className='flex justify-end p-4'>
-          <button>
+          <button onClick={toggleNavDrawer}>
             <IoClose className='h-6 w-6 text-gray-600'/>
           </button>
          </div> 
+         <div className='p-4'>
+          <h2 className='text=xl font-semibold mb-4'>Menu</h2>
+          <nav className='space-y-4'>
+            <Link to="#" 
+            onClick={toggleNavDrawer} 
+            className='block text-gray-600 hover:text=black'>
+            Men
+            </Link>
+
+            <Link to="#" 
+            onClick={toggleNavDrawer} 
+            className='block text-gray-600 hover:text=black'>
+            Women
+            </Link>
+
+            <Link to="#" 
+            onClick={toggleNavDrawer} 
+            className='block text-gray-600 hover:text=black'>
+            Top Wear
+            </Link>
+
+            <Link to="#" 
+            onClick={toggleNavDrawer} 
+            className='block text-gray-600 hover:text=black'>
+            Bottom Wear
+            </Link>
+
+          </nav>
+         </div>
         </div>
 
     </>
