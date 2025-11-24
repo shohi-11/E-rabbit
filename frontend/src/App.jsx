@@ -1,6 +1,7 @@
-import React from 'react'
-import { BrowserRouter, Routes,Route } from 'react-router-dom'
-import UserLayout from './components/Layout/UserLayout'
+import React from 'react';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import UserLayout from './components/Layout/UserLayout';
+import Home from './pages/Home';
 
 const App = () => {
   return (
@@ -11,8 +12,11 @@ const App = () => {
    www.rabbit.com/cart
    */}
    <Routes>
-    <Route path="/" element ={<UserLayout/>}>{/* User layout*/}</Route>
-    <Route>{/*Admin Layout*/}</Route>
+    <Route path="/" element ={<UserLayout/>}>{/* User layout*/}
+      <Route index element={<Home/>}/>
+    </Route>
+    <Route>{/*Admin Layout */}</Route>
+    
    </Routes>
    </BrowserRouter>
   )
