@@ -18,7 +18,7 @@ useEffect(()=>{
                 },
             ],
             totalPrice: 100,
-            isPadid: true,
+            isPaid: true,
         },
         {
             _id:"34567",
@@ -31,7 +31,7 @@ useEffect(()=>{
                 },
             ],
             totalPrice: 100,
-            isPadid: true,
+            isPaid: true,
         },
     ];
     setOrders(mockOrders);
